@@ -12,12 +12,10 @@ class GameEngine:
     def __init__(self):
         try:
             self.day = 1
-            self.gold = 150          # Збільшили стартове золото з 50 до 150
+            self.gold = 150          
             self.target_gold = 1000  # Мета для виграшу
-            self.rent_cost = 10      # Зменшили оренду з 20 до 10 G на день
-            self.max_days = 25       # Збільшили ліміт часу з 15 до 25 днів  # Обмеження за часом
-
-            # Інвентарі за ТЗ
+            self.rent_cost = 10     
+            self.max_days = 25       
             self.ingredients_inv = Inventory(max_slots=50, max_stack=25)
             self.potions_inv = Inventory(max_slots=20, max_stack=10)
 
